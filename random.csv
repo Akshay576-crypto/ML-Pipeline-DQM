@@ -1,0 +1,11 @@
+customer_id,name,email,city,age,salary
+1,Akshay,[akshay@gmail.com],(mailto:akshay@gmail.com),Navsari,22,350000
+2,Rahul,[rahul@gmail.com],(mailto:rahul@gmail.com),Surat,24,42000
+3,Priya,[priya@gmail.com],(mailto:priya@gmail.com),Ahmedabad,23,38000
+4,Neha,[neha@gmail.com],(mailto:neha@gmail.com),Vadodara,25,45000
+5,Amit,[amit@gmail.com],(mailto:amit@gmail.com),Rajkot,26,50000
+6,Karan,[karan@gmail.com],(mailto:karan@gmail.com),Bhavnagar,28,55000
+7,Riya,[riya@gmail.com],(mailto:riya@gmail.com),Surat,21,32000
+8,Manish,[manish@gmail.com],(mailto:manish@gmail.com),Ahmedabad,29,60000
+9,Pooja,[pooja@gmail.com],(mailto:pooja@gmail.com),Navsari,24,41000
+10,Jay,[jay@gmail.com],(mailto:jay@gmail.com),Valsad,27,52000

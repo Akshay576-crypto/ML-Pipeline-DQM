@@ -1,0 +1,33 @@
+.upload-card {
+    width: 500px;
+    padding: 40px;
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.upload-card h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.upload-card input {
+    width: 100%;
+    margin: 20px 0;
+    color: white;
+}
+
+.upload-card button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 20px;
+    color: white;
+}

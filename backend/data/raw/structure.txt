@@ -1,0 +1,68 @@
+data-quality-monitoring-platform/
+│
+├── backend/
+│   │
+│   ├── app/
+│   │   │
+│   │   ├── api/
+│   │   │   ├── upload.py
+│   │   │   ├── anomaly.py
+│   │   │   └── report.py
+│   │   │
+│   │   ├── services/
+│   │   │   ├── data_validator.py
+│   │   │   ├── anomaly_detector.py
+│   │   │   └── report_generator.py
+│   │   │
+│   │   ├── database/
+│   │   │   ├── connection.py
+│   │   │   └── models.py
+│   │   │
+│   │   ├── schemas/
+│   │   │   └── request_schema.py
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── file_handler.py
+│   │   │   └── logger.py
+│   │   │
+│   │   └── main.py
+│   │
+│   ├── ml/
+│   │   ├── train_model.py
+│   │   ├── predict.py
+│   │   └── anomaly_model.pkl
+│   │
+│   ├── data/
+│   │   ├── raw/
+│   │   ├── processed/
+│   │   └── reports/
+│   │
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   │
+│   ├── pages/
+│   │   ├── dashboard.html
+│   │   ├── upload.html
+│   │   └── report.html
+│   │
+│   ├── css/
+│   │   ├── style.css
+│   │   └── dashboard.css
+│   │
+│   ├── js/
+│   │   ├── api.js
+│   │   ├── upload.js
+│   │   └── dashboard.js
+│   │
+│   └── assets/
+│
+├── database/
+│   └── schema.sql
+│
+├── docker-compose.yml
+│
+├── .gitignore
+│
+└── README.md

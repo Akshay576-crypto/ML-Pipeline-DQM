@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomalies</title>
+
+    <link rel="stylesheet" href="/static/css/anomalies.css">
+</head>
+
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                DQM
+            </div>
+
+            <ul class="menu">
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/upload-page">Upload</a></li>
+                <li><a href="/anamolies-page">Anomalies</a></li>
+                <li><a href="/report-page">Report</a></li>
+            </ul>
+
+        </aside>
+
+        <main class="content">
+
+            <h1 class="page-title">
+                Anomaly Detection Center
+            </h1>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>Total Alerts</h3>
+                    <h2 id="total-alerts">Loading...</h2>
+                </div>
+
+                <div class="stat-card">
+                    <h3>High Risk</h3>
+                    <h2 id="high-risk">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Medium Risk</h3>
+                    <h2 id="medium-risk">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Low Risk</h3>
+                    <h2 id="low-risk">0</h2>
+                </div>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h2>Anomaly Trend</h2>
+
+                <div class="chart-container">
+                    <canvas id="anomalyChart"></canvas>
+                </div>
+
+            </div>
+
+            <div class="table-card">
+
+                <h2>Detected Alerts</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Alert Type</th>
+                            <th>Message</th>
+                            <th>Severity</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="alert-table-body">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/static/js/anamolies.js?v=1"></script>
+
+</body>
+
+</html>

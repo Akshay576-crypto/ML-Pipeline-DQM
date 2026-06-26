@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+.aurora-bg {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at top left, #4f46e5, transparent 35%),
+        radial-gradient(circle at bottom right, #06b6d4, transparent 35%),
+        #0f172a;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.page-title {
+    margin-bottom: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-card,
+.chart-card,
+.table-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.stat-card h3 {
+    color: #cbd5e1;
+}
+
+.stat-card h2 {
+    margin-top: 10px;
+}
+
+.chart-card {
+    margin-top: 30px;
+}
+
+.table-card {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+thead {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.chart-card {
+    margin-top: 30px;
+    height: 450px;
+}
+
+#anomalyChart {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+.chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Report</title>
+
+    <link rel="stylesheet" href="/static/css/report.css">
+</head>
+
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                DQM
+            </div>
+
+            <ul class="menu">
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/upload-page">Upload</a></li>
+                <li><a href="/anamolies-page">Anomalies</a></li>
+                <li><a href="/report-page">Report</a></li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <h1 class="page-title">
+                Data Quality Analytics Report
+            </h1>
+
+            <!-- Summary Cards -->
+            <div class="report-grid">
+
+                <div class="glass-card">
+                    <h3>Quality Score</h3>
+                    <h2 id="quality-score">Loading...</h2>
+                </div>
+
+                <div class="glass-card">
+                    <h3>Anomaly Count</h3>
+                    <h2 id="anomaly-count">Loading...</h2>
+                </div>
+
+                <div class="glass-card">
+                    <h3>Total Records</h3>
+                    <h2 id="total-records">Loading...</h2>
+                </div>
+
+                <div class="glass-card">
+                    <h3>Quality Status</h3>
+                    <h2 id="quality-status">Loading...</h2>
+                </div>
+
+            </div>
+
+            <!-- Quality Trend Chart -->
+            <div class="glass-chart">
+
+                <h2>Quality Trend</h2>
+
+                <canvas id="qualityChart"></canvas>
+
+            </div>
+
+            <!-- Report Details -->
+            <div class="glass-table">
+
+                <h2>Latest Pipeline Report</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Upload Time</th>
+                            <th>Quality Score</th>
+                            <th>Anomaly %</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="report-table-body">
+
+                        <tr>
+                            <td colspan="4">
+                                Loading report...
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Download Button -->
+            <div class="download-section">
+
+                <button id="download-report-btn">
+                    Download PDF Report
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/report.js?v=1"></script>
+
+</body>
+
+</html>

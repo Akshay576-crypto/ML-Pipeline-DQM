@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Quality Monitoring Platform</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2>DQM</h2>
+
+            <ul>
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/upload-page">Upload</a></li>
+                <li><a href="/anamolies-page">Anomalies</a></li>
+                <li><a href="/report-page">Report</a></li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <!-- Dashboard Cards -->
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Average Quality Score</h3>
+                    <p id="quality-score">Loading...</p>
+                </div>
+
+                <div class="card">
+                    <h3>Average Anomaly %</h3>
+                    <p id="anomaly-percentage">Loading...</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Runs</h3>
+                    <p id="total-runs">Loading...</p>
+                </div>
+
+            </div>
+            <!-- Quality Trend Chart -->
+            <div class="chart-card">
+                <h3>Quality Trend</h3>
+                <canvas id="qualityChart"></canvas>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Dashboard JS -->
+    <script src="/static/js/dashboard.js?v=999"></script>
+
+</body>
+
+</html>
